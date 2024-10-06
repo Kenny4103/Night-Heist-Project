@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DetectorSquare : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class DetectorSquare : MonoBehaviour
         if (other.gameObject.layer == LayerMask.NameToLayer("Player"))
         {
             Debug.Log ("The Player has been detected");
+            SceneManager.LoadScene("Level 1");
         }
     }
 }

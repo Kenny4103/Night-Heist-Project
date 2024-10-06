@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,7 +95,322 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: prop assets_0
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 1690
+        width: 168
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e64e242701f6c134c9a6cef03c4fafda
+      internalID: 875117033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prop assets_1
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 1737
+        width: 240
+        height: 221
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c2f3ee2d557c2c469031d4dfea90685
+      internalID: -1476092204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prop assets_2
+      rect:
+        serializedVersion: 2
+        x: 1412
+        y: 1677
+        width: 206
+        height: 347
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a183a04823c2734bbdc6da54e7b04d9
+      internalID: -1516136622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prop assets_3
+      rect:
+        serializedVersion: 2
+        x: 1775
+        y: 1681
+        width: 206
+        height: 344
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e36808eca5c0ea43a8b50d84f48acd7
+      internalID: 596707426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prop assets_5
+      rect:
+        serializedVersion: 2
+        x: 2123
+        y: 1656
+        width: 385
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a4e7ab504388d4bb56c2cab3200657
+      internalID: -1368187570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prop assets_6
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 1676
+        width: 312
+        height: 231
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1c0cc0861dc95e47ab9b98444deeec3
+      internalID: -2073293718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prop assets_14
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 1250
+        width: 247
+        height: 324
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3542e5c3891c44b4d919d9a94c1f6071
+      internalID: -986965342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prop assets_15
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 1254
+        width: 235
+        height: 311
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77904106b9651754a864d0065186907d
+      internalID: -575766393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prop assets_16
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 701
+        width: 1390
+        height: 788
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb40f358ce491f4faa3649faca3fc4a
+      internalID: -144431684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prop assets_17
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 359
+        width: 606
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef6f3393465bd82458772bd3f5b3d8b0
+      internalID: -968442036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prop assets_18
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 367
+        width: 605
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57bd8c57eac25134697da6663f9b74fa
+      internalID: -940285710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prop assets_19
+      rect:
+        serializedVersion: 2
+        x: 1490
+        y: 363
+        width: 606
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de660b102ea65eb44ae9cca71bdc7d04
+      internalID: 583469054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prop assets_20
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 119
+        width: 607
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98093f596f6de5744b976d3c69bde2b2
+      internalID: 1370063969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prop assets_21
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 123
+        width: 606
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ef4eb4b81306fc4d851b2f532d4ec98
+      internalID: -533166225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prop assets_22
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 119
+        width: 606
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97cc270da82d0434882026502984873f
+      internalID: -1628881795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +421,30 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      prop assets_0: 875117033
+      prop assets_1: -1476092204
+      prop assets_10: -1292347844
+      prop assets_11: 1284785274
+      prop assets_12: 196718154
+      prop assets_13: 1978459193
+      prop assets_14: -986965342
+      prop assets_15: -575766393
+      prop assets_16: -144431684
+      prop assets_17: -968442036
+      prop assets_18: -940285710
+      prop assets_19: 583469054
+      prop assets_2: -1516136622
+      prop assets_20: 1370063969
+      prop assets_21: -533166225
+      prop assets_22: -1628881795
+      prop assets_3: 596707426
+      prop assets_4: -1115172665
+      prop assets_5: -1368187570
+      prop assets_6: -2073293718
+      prop assets_7: -1650396355
+      prop assets_8: -530241421
+      prop assets_9: 1560576858
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
