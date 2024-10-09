@@ -1,13 +1,8 @@
-using System;
-using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
-// This is the script for Player movement in the Hubworld
-// It's separate from the PlayerManager script
 public class ThiefMovement : MonoBehaviour
 {
     /*** References ***/
@@ -18,6 +13,9 @@ public class ThiefMovement : MonoBehaviour
     public Text messageText; // Drag your UI Text here in the Inspector
     private float messageDuration = 2f; // Duration to show the message
     private Vector3 originalMessagePosition; // To store original position of the text
+
+    public CanvasGroup fadeCanvasGroup; // Drag your CanvasGroup for fade in/out here
+    private float fadeDuration = 1f; // Duration for the fade effect
 
     private GameObject currentCollectable = null; // Store the current collectable object
     private int totalCollectables; // Total collectables in the level
@@ -44,10 +42,7 @@ public class ThiefMovement : MonoBehaviour
 
         // Show the starting message when the level starts
         ShowMessage("WASD TO MOVE. COLLECT ALL JEWELS AND DON'T GET CAUGHT!!!");
-
-        // Hide the message text at the start (after showing the initial message)
     }
-
 
     private void Awake()
     {
@@ -92,6 +87,7 @@ public class ThiefMovement : MonoBehaviour
         // Start a coroutine to display the message
         StartCoroutine(DisplayMessage(message));
     }
+
     private IEnumerator DisplayMessage(string message)
     {
         // Move the messageText down slightly to avoid overlap
@@ -109,6 +105,39 @@ public class ThiefMovement : MonoBehaviour
         // Reset position for the next message
         messageText.rectTransform.position = originalMessagePosition;
     }
+
+    // Function to handle loading the next level with fade transition
+    private IEnumerator LoadNextLevel(string nextLevelName)
+    {
+        // Start fade-out effect
+        float fadeSpeed = 1f / fadeDuration;
+        float progress = 0f;
+
+        while (progress < 1f)
+        {
+            fadeCanvasGroup.alpha = Mathf.Lerp(0f, 1f, progress);
+            progress += Time.deltaTime * fadeSpeed;
+            yield return null;
+        }
+
+        // Ensure the screen is completely black
+        fadeCanvasGroup.alpha = 1f;
+
+        // Load the next level
+        SceneManager.LoadScene(nextLevelName);
+
+        // Optionally, you can add a fade-in effect after loading
+        progress = 0f;
+        while (progress < 1f)
+        {
+            fadeCanvasGroup.alpha = Mathf.Lerp(1f, 0f, progress);
+            progress += Time.deltaTime * fadeSpeed;
+            yield return null;
+        }
+
+        fadeCanvasGroup.alpha = 0f; // Ensure it’s completely transparent
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         foreach (Transform child in collision.transform)
@@ -124,19 +153,20 @@ public class ThiefMovement : MonoBehaviour
                 if (collectedJewels >= totalCollectables)
                 {
                     ShowMessage("Finished Level!");
-                    // Uncomment this to load next level
+
+                    // Load next level with a fade transition
                     if (SceneManager.GetActiveScene().name == "Level 1")
                     {
-                        SceneManager.LoadScene("Level 2");
+                        StartCoroutine(LoadNextLevel("Level 2"));
                     }
                     else if (SceneManager.GetActiveScene().name == "Level 2")
                     {
-                        SceneManager.LoadScene("Level 3");
+                        StartCoroutine(LoadNextLevel("Level 3"));
                     }
                     else if (SceneManager.GetActiveScene().name == "Level 3")
                     {
-                        SceneManager.LoadScene("Win Screen");
-                    }    
+                        StartCoroutine(LoadNextLevel("Win Screen"));
+                    }
                 }
                 else
                 {
